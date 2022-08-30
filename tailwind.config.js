@@ -2,15 +2,29 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screen : {
-        'xs': '360px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-      },
-    extend: {},
+
+    screens: {
+
+      'tablet': '640px',
+
+      'laptop': '1024px',
+
+      'd11': '1100px',
+
+      'd12': '1200px',
+
+      'd13': '1300px',
+
+      'd15': '1500px',
+     
+      'd16': '1600px',
+
+      'd19': '1900px',
+     
+    },
+
+   
   },
+  extend: {},
   plugins: [],
 }

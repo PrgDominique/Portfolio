@@ -13,8 +13,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap");
 
 * {
   margin: 0;
@@ -27,7 +26,7 @@
 
 .containerfull {
   width: 100%;
-  height: 200vh;
+  height: 250vh;
   background-color: #0f0e17;
 }
 
@@ -102,7 +101,6 @@
     margin-right: auto;
     padding-top: 15vh;
   }
-  
 }
 
 @media only screen and (max-width: 450px) {
@@ -123,12 +121,11 @@
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
-  
+  padding-top: 35vh;
 }
 
 .Aboutme {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fffffe;
   margin-left: auto;
   margin-right: auto;
@@ -137,13 +134,109 @@
   padding-top: 5vh;
 }
 
-.text2{
+.text2 {
   color: #fffffe;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  padding-top: 5vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  padding: 5vh 30vh;
   text-align: center;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .Aboutme {
+    font-family: "Open Sans", sans-serif;
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5vh;
+  }
+  
+  .text2 {
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    padding: 5vh 15vh;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Aboutme {
+    font-family: "Open Sans", sans-serif;
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5vh;
+  }
+  .text2 {
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    padding: 5vh 5vh;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container2 {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+  }
+  .Aboutme {
+    font-family: "Open Sans", sans-serif;
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: 5vh;
+  }
+  .text2 {
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.90rem;
+    padding: 5vh;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Aboutme {
+    font-family: "Open Sans", sans-serif;
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: 5vh;
+  }
+  .text2 {
+    color: #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.80rem;
+    padding: 1vh 1vh;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
+.container3{
   
 }

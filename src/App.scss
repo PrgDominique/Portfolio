@@ -144,30 +144,15 @@
   text-align: center;
   line-height: 2rem;
 }
-@media only screen and (max-width: 1000px) {
-  .Aboutme {
-    font-family: "Open Sans", sans-serif;
-    color: #fffffe;
+
+@media only screen and (max-width: 550px) {
+  .container2 {
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 5vh;
+    padding-top: 20vh;
   }
   
-  .text2 {
-    color: #fffffe;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.25rem;
-    padding: 5vh 15vh;
-    text-align: center;
-    line-height: 2rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
   .Aboutme {
     font-family: "Open Sans", sans-serif;
     color: #fffffe;
@@ -177,6 +162,7 @@
     font-size: 2rem;
     padding-top: 5vh;
   }
+  
   .text2 {
     color: #fffffe;
     margin-left: auto;
@@ -188,55 +174,4 @@
     line-height: 2rem;
   }
 }
-@media only screen and (max-width: 540px) {
-  .container2 {
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 100px;
-  }
-  .Aboutme {
-    font-family: "Open Sans", sans-serif;
-    color: #fffffe;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 1.25rem;
-    padding-top: 5vh;
-  }
-  .text2 {
-    color: #fffffe;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.90rem;
-    padding: 5vh;
-    text-align: center;
-    line-height: 2rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .Aboutme {
-    font-family: "Open Sans", sans-serif;
-    color: #fffffe;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 1.25rem;
-    padding-top: 5vh;
-  }
-  .text2 {
-    color: #fffffe;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.80rem;
-    padding: 1vh 1vh;
-    text-align: center;
-    line-height: 2rem;
-  }
-}
 
-.container3{
-  
-}

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const skill = () => {
+const Skill = () => {
   return (
-    <div>skill</div>
+    <div>Skill</div>
   )
 }
 
-export default skill
+export default Skill

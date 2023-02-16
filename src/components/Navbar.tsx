@@ -12,16 +12,16 @@ const Navbar = () => {
       <div className='flex md:justify-end gap-5 text-white text-xl'>
         <ul className='flex gap-5'>
           <li>
-            <ListItem href='#' name='Home' />
+            <ListItem href='/home' name='Home' />
           </li>
           <li>
-            <ListItem href='#' name='About' />
+            <ListItem href='/about' name='About' />
           </li>
           <li>
-            <ListItem href='#' name='Skills' />
+            <ListItem href='/skill' name='Skills' />
           </li>
           <li>
-            <ListItem href='#' name='Projects' />
+            <ListItem href='/project' name='Projects' />
           </li>
           <li>
             <ListItem href='#' name='Resume' />

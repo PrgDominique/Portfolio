@@ -7,8 +7,8 @@ export const ListItem = ({ href, name, active }: any) => {
         href={href}
         className={
           active
-            ? 'hover:text-slate-700 text-slate-700 font-bold'
-            : 'hover:text-slate-700'
+            ? 'hover:text-slate-700 text-slate-700 font-bold mr-8'
+            : 'hover:text-slate-700 mr-8'
         }
       >
         {name}

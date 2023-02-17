@@ -2,6 +2,7 @@ import { useColorMode } from '@/hooks/useColorMode'
 import { useRouter } from 'next/router'
 import { ToggleButton } from './ui/button/ToggleButton'
 import { ListItem } from './ui/navbar/ListItem'
+import Menu from './ui/navbar/Menu'
 
 const Navbar = () => {
   const [colorMode, toggleColor] = useColorMode()
@@ -12,8 +13,8 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#212529] p-6'>
-      <div className='grid grid-cols-3 gap-8 text-white text-xl'>
-        <div className='flex justify-end col-span-2'>
+      <div className='grid grid-cols-4 max-md:hidden text-white text-xl'>
+        <div className='flex justify-end col-span-3'>
           <ul className='flex gap-5'>
             <li>
               <ListItem
@@ -54,8 +55,11 @@ const Navbar = () => {
         </div>
         <div className='flex justify-end'>
           <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
-        </div>
       </div>
+        </div>
+        <div className="flex justify-end md:hidden">
+          <Menu />
+        </div>
     </div>
   )
 }

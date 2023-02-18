@@ -1,10 +1,12 @@
 import { useColorMode } from '@/hooks/useColorMode'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import { ToggleButton } from './ui/button/ToggleButton'
 import { ListItem } from './ui/navbar/ListItem'
 import Menu from './ui/navbar/Menu'
 
 const Navbar = () => {
+  const [menuActive, setMenuActive] = useState(true)
   const [colorMode, toggleColor] = useColorMode()
   const router = useRouter()
 
@@ -13,9 +15,28 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#212529] p-6'>
-      <div className='grid grid-cols-4 max-md:hidden text-white text-xl'>
-        <div className='flex justify-end col-span-3'>
-          <ul className='flex gap-5'>
+      <div className='md:grid md:grid-cols-4 text-white text-xl'>
+        {/* dark mode / light mode icon */}
+        <div className='grid grid-cols-2 md:hidden'>
+          <div className='flex md:justify-end'>
+            <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
+          </div>
+
+          {/* hamburger menu */}
+
+          <div className='flex justify-end  text-white '>
+            <Menu setMenuActive={setMenuActive} menuActive={menuActive} />
+          </div>
+        </div>
+
+        <div className='flex md:justify-end justify-center col-span-3'>
+          <ul
+            className={
+              menuActive
+                ? 'md:flex gap-5 hidden'
+                : 'md:flex grid grid-cols-1 gap-5'
+            }
+          >
             <li>
               <ListItem
                 href='/home'
@@ -53,13 +74,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className='flex justify-end'>
+        <div className='flex justify-end max-md:hidden'>
           <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
+        </div>
       </div>
-        </div>
-        <div className="flex justify-end md:hidden">
-          <Menu />
-        </div>
+      {/* <div className='flex justify-end md:hidden text-white '>
+        <Menu setMenuActive={setMenuActive} menuActive={menuActive} />
+      </div> */}
     </div>
   )
 }

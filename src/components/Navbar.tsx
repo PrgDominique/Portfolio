@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className='bg-[#212529] p-6'>
       <div className='md:grid md:grid-cols-4 text-white text-xl'>
         {/* dark mode / light mode icon */}
-        <div className='grid grid-cols-2 md:hidden'>
+        <div className='flex justify-between md:hidden'>
           <div className='flex md:justify-end'>
             <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
           </div>

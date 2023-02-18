@@ -8,7 +8,7 @@ export const ToggleButton = ({ colorMode, toggleColor }: any) => {
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
               fill='currentColor'
-              className='w-6 h-6'
+              className='w-8 h-8'
             >
               <path
                 fillRule='evenodd'
@@ -25,7 +25,7 @@ export const ToggleButton = ({ colorMode, toggleColor }: any) => {
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               stroke='currentColor'
-              className='w-6 h-6'
+              className='w-8 h-8'
             >
               <path
                 strokeLinecap='round'

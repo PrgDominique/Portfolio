@@ -67,6 +67,13 @@ const Navbar = () => {
             </li>
             <li>
               <ListItem
+                href='/contact'
+                name='Contact'
+                active={currentPathname === '/contact'}
+              />
+            </li>
+            <li>
+              <ListItem
                 href='#'
                 name='Resume'
                 active={currentPathname === '/resume'}
@@ -78,9 +85,6 @@ const Navbar = () => {
           <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
         </div>
       </div>
-      {/* <div className='flex justify-end md:hidden text-white '>
-        <Menu setMenuActive={setMenuActive} menuActive={menuActive} />
-      </div> */}
     </div>
   )
 }

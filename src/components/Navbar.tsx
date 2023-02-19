@@ -79,6 +79,13 @@ const Navbar = () => {
                 active={currentPathname === '/resume'}
               />
             </li>
+            <li>
+              <ListItem
+                href='#'
+                name='Resume'
+                active={currentPathname === '/resume'}
+              />
+            </li>
           </ul>
         </div>
         <div className='flex justify-end max-md:hidden'>

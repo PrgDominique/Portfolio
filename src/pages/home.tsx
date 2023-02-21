@@ -8,7 +8,7 @@ const Home = () => {
         <h1 className='md:text-[5rem] text-[3rem] font-bold text-center uppercase'>
           Dominique Simbillo
         </h1>
-        <div className='md:text-[3rem] text-[2rem] flex justify-center font-bold '>
+        <div className='md:text-[3rem] text-[2rem] flex justify-center font-bold mt-5 '>
           <Typewriter
             options={{
               autoStart: true,
@@ -24,7 +24,7 @@ const Home = () => {
             }}
           />
         </div>
-        <div className='flex justify-center gap-10'>
+        <div className='flex justify-center gap-20 mt-10 '>
           <LinkedIn />
           <Github />
       </div>

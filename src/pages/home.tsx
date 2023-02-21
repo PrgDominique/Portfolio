@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect'
 
 const Home = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center dark:text-[#ede2e2]'>
+    <div className='h-screen flex flex-col justify-center items-center '>
         <h1 className='md:text-[5rem] text-[3rem] font-bold text-center uppercase'>
           Dominique Simbillo
         </h1>

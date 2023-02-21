@@ -14,7 +14,7 @@ const Navbar = () => {
   const currentPathname = router.pathname
 
   return (
-    <div className='bg-[#212529] p-6'>
+    <div className='bg-[#212529] p-6 absolute z-[2] w-full'>
       <div className='md:grid md:grid-cols-4 text-white text-xl'>
         {/* dark mode / light mode icon */}
         <div className='flex justify-between md:hidden'>

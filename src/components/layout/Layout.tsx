@@ -2,10 +2,10 @@ import Navbar from '../Navbar'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='dark:bg-[#121212] transition duration-300 ease-in h-screen text-[#121212] '>
+    <div>
       <Navbar />
-      <div >
-        <div className='p-5'>{children}</div>
+      <div className='dark:bg-[#121212] transition duration-300 ease-in h-full min-h-screen text-[#121212] '>
+        <div className='flex justify-center items-center h-screen'>{children}</div>
       </div>
     </div>
   )

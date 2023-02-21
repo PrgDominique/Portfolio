@@ -4,8 +4,8 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div className=' dark:text-[#ede2e2] '>
-      <div className='container mx-auto'>
-        <div className='md:mt-[7rem] mt-[5rem]'>
+      <div className='container mx-auto '>
+        <div className='md:mt-[8rem] mt-[5rem]'>
           <div className='grid md:grid-cols-2 gap-16'>
             <div className='row order-2 md:order-1'>
               <div className='flex p-5'>
@@ -15,7 +15,7 @@ const About = () => {
                   Information Technology from Colegio De San Gabriel Archangel{' '}
                 </h1>
               </div>
-              <div className='flex mt-10 p-5'>
+              <div className='flex mt-5 p-5'>
                 <h1 className='text-lg text-justify font-medium '>
                   I have experience with front-end technologies such as HTML,
                   CSS, and JavaScript, as well as with ReactJS, one of the most
@@ -27,7 +27,7 @@ const About = () => {
                   and more reliable.{' '}
                 </h1>
               </div>
-              <div className='flex mt-10 p-5'>
+              <div className='flex mt-5 p-5'>
                 <h1 className='text-lg text-justify font-medium'>
                   On the back-end, I've worked with PHP and have experience with
                   Laravel, one of the most popular PHP frameworks. I enjoy
@@ -36,7 +36,7 @@ const About = () => {
                 </h1>
               </div>
             </div>
-            <div className=' max-md:mt-10 flex md:order-2 order-1 max-md:w-[300px] mx-auto'>
+            <div className=' max-md:5-10 max-md:w-[300px] mt-10 flex md:order-2 order-1  mx-auto'>
               <Image
                 src={DomzPhoto}
                 alt='Dominque photo'

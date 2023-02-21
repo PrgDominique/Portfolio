@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#212529] p-6 absolute z-[2] w-full'>
-      <div className='md:grid md:grid-cols-4 text-white text-xl'>
+      <div className=' text-white text-xl'>
         {/* dark mode / light mode icon */}
         <div className='flex justify-between md:hidden'>
           <div className='flex md:justify-end'>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='flex md:justify-end justify-start col-span-3'>
+        <div className='flex md:justify-end justify-start '>
           <ul
             className={
               menuActive
@@ -79,10 +79,12 @@ const Navbar = () => {
                 active={currentPathname === '/resume'}
               />
             </li>
+            <li>
+              <div className='flex justify-end max-md:hidden'>
+                <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
+              </div>
+            </li>
           </ul>
-        </div>
-        <div className='flex justify-end max-md:hidden'>
-          <ToggleButton colorMode={colorMode} toggleColor={toggleColor} />
         </div>
       </div>
     </div>

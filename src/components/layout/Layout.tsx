@@ -5,7 +5,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Navbar />
       <div className='dark:bg-[#121212] transition duration-300 ease-in h-full min-h-screen text-[#121212] '>
-        <div className='flex justify-center items-center h-screen'>{children}</div>
+        <div className='flex justify-center items-center '>{children}</div>
       </div>
     </div>
   )

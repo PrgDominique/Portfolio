@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='flex md:justify-end justify-center col-span-3'>
+        <div className='flex md:justify-end justify-start col-span-3'>
           <ul
             className={
               menuActive

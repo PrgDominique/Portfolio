@@ -8,14 +8,14 @@ const About = () => {
         <div className='md:mt-[7rem] mt-[5rem]'>
           <div className='grid md:grid-cols-2 gap-16'>
             <div className='row order-2 md:order-1'>
-              <div className='flex '>
+              <div className='flex p-5'>
                 <h1 className='text-lg text-justify font-medium '>
                   Hello, I'm Dominique Simbillo, a software engineer with a
                   focus on web development. I received my Bachelor's degree in
                   Information Technology from Colegio De San Gabriel Archangel{' '}
                 </h1>
               </div>
-              <div className='flex mt-10'>
+              <div className='flex mt-10 p-5'>
                 <h1 className='text-lg text-justify font-medium '>
                   I have experience with front-end technologies such as HTML,
                   CSS, and JavaScript, as well as with ReactJS, one of the most
@@ -27,7 +27,7 @@ const About = () => {
                   and more reliable.{' '}
                 </h1>
               </div>
-              <div className='flex mt-10'>
+              <div className='flex mt-10 p-5'>
                 <h1 className='text-lg text-justify font-medium'>
                   On the back-end, I've worked with PHP and have experience with
                   Laravel, one of the most popular PHP frameworks. I enjoy

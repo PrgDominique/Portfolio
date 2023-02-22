@@ -3,8 +3,6 @@ import ProgrammingLanguage from '../localdata/skill/ProgrammingLanguage.json'
 import Frameworks from '../localdata/skill/Frameworks.json'
 import Database from '../localdata/skill/Database.json'
 import Tools from '../localdata/skill/Tools.json'
-import Git from '@/components/skills/Git'
-import Github from '@/components/skills/Github'
 import { Icon } from '@/components/Image/Icon'
 
 const Skill = () => {

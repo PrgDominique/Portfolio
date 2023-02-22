@@ -2,15 +2,10 @@ import uuid from 'react-uuid'
 import Firebase from '@/components/skills/Firebase'
 import Git from '@/components/skills/Git'
 import Github from '@/components/skills/Github'
-import Laravel from '@/components/skills/Laravel'
-import MaterialUI from '@/components/skills/MaterialUI'
 import MongoDB from '@/components/skills/MongoDB'
 import MySQL from '@/components/skills/MySQL'
-import NextJS from '@/components/skills/NextJS'
-import NodeJs from '@/components/skills/NodeJs'
-import ReactJS from '@/components/skills/ReactJS'
-import TailwindCSS from '@/components/skills/TailwindCSS'
 import ProgrammingLanguage from '../localdata/skill/ProgrammingLanguage.json'
+import Frameworks from '../localdata/skill/Frameworks.json'
 import { Icon } from '@/components/Image/Icon'
 
 const Skill = () => {
@@ -42,30 +37,14 @@ const Skill = () => {
             Frameworks & Technologies
           </h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
-            <div className='text-center'>
-              <ReactJS />
-              <p className='text-lg font-medium'>React JS</p>
-            </div>
-            <div className='text-center'>
-              <NextJS />
-              <p className='text-lg font-medium'>Next JS</p>
-            </div>
-            <div className='text-center'>
-              <Laravel />
-              <p className='text-lg font-medium'>Laravel</p>
-            </div>
-            <div className='text-center'>
-              <NodeJs />
-              <p className='text-lg font-medium'>Node JS</p>
-            </div>
-            <div className='text-center'>
-              <TailwindCSS />
-              <p className='text-lg font-medium mt-2'>Tailwind CSS</p>
-            </div>
-            <div className='text-center'>
-              <MaterialUI />
-              <p className='text-lg font-medium mt-2'>Material UI</p>
-            </div>
+            {Frameworks.map((framework) => {
+              return (
+                <div key={uuid()} className='text-center'>
+                  <Icon src={framework.image} alt={framework.name} />
+                  <p className='text-lg font-medium'>{framework.name}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -1,18 +1,17 @@
+import uuid from 'react-uuid'
 import Firebase from '@/components/skills/Firebase'
 import Git from '@/components/skills/Git'
 import Github from '@/components/skills/Github'
-import Javascript from '@/components/skills/Javascript'
 import Laravel from '@/components/skills/Laravel'
 import MaterialUI from '@/components/skills/MaterialUI'
 import MongoDB from '@/components/skills/MongoDB'
 import MySQL from '@/components/skills/MySQL'
 import NextJS from '@/components/skills/NextJS'
 import NodeJs from '@/components/skills/NodeJs'
-import Php from '@/components/skills/Php'
 import ReactJS from '@/components/skills/ReactJS'
 import TailwindCSS from '@/components/skills/TailwindCSS'
-import Typescript from '@/components/skills/Typescript'
-import React from 'react'
+import ProgrammingLanguage from '../localdata/skill/ProgrammingLanguage.json'
+import { Icon } from '@/components/Image/Icon'
 
 const Skill = () => {
   return (
@@ -28,18 +27,14 @@ const Skill = () => {
             Programming Language
           </h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
-            <div className='text-center'>
-              <Php />
-              <p className='text-lg font-medium'>PHP</p>
-            </div>
-            <div className='text-center'>
-              <Javascript />
-              <p className='text-lg font-medium'>Javascript</p>
-            </div>
-            <div className='text-center'>
-              <Typescript />
-              <p className='text-lg font-medium'>Typescript</p>
-            </div>
+            {ProgrammingLanguage.map((pl) => {
+              return (
+                <div key={uuid()} className='text-center'>
+                  <Icon src={pl.image} alt={pl.name} />
+                  <p className='text-lg font-medium'>{pl.name}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
         <div className='mt-10'>

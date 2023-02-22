@@ -1,11 +1,10 @@
 import uuid from 'react-uuid'
-import Firebase from '@/components/skills/Firebase'
-import Git from '@/components/skills/Git'
-import Github from '@/components/skills/Github'
-import MongoDB from '@/components/skills/MongoDB'
-import MySQL from '@/components/skills/MySQL'
 import ProgrammingLanguage from '../localdata/skill/ProgrammingLanguage.json'
 import Frameworks from '../localdata/skill/Frameworks.json'
+import Database from '../localdata/skill/Database.json'
+import Tools from '../localdata/skill/Tools.json'
+import Git from '@/components/skills/Git'
+import Github from '@/components/skills/Github'
 import { Icon } from '@/components/Image/Icon'
 
 const Skill = () => {
@@ -37,14 +36,15 @@ const Skill = () => {
             Frameworks & Technologies
           </h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
-            {Frameworks.map((framework) => {
-              return (
-                <div key={uuid()} className='text-center'>
-                  <Icon src={framework.image} alt={framework.name} />
-                  <p className='text-lg font-medium'>{framework.name}</p>
-                </div>
-              )
-            })}
+            {Frameworks &&
+              Frameworks.map((framework) => {
+                return (
+                  <div key={uuid()} className='text-center'>
+                    <Icon src={framework.image} alt={framework.name} />
+                    <p className='text-lg font-medium'>{framework.name}</p>
+                  </div>
+                )
+              })}
           </div>
         </div>
       </div>
@@ -52,18 +52,15 @@ const Skill = () => {
         <div>
           <h2 className='text-[2rem] font-medium text-center'>Database</h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
-            <div className='text-center'>
-              <MySQL />
-              <p className='text-lg font-medium'>MySQL</p>
-            </div>
-            <div className='text-center'>
-              <MongoDB />
-              <p className='text-lg font-medium'>MongoDB</p>
-            </div>
-            <div className='text-center'>
-              <Firebase />
-              <p className='text-lg font-medium'>Firebase</p>
-            </div>
+            {Database &&
+              Database.map((db) => {
+                return (
+                  <div key={uuid()} className='text-center'>
+                    <Icon src={db.image} alt={db.name} />
+                    <p className='text-lg font-medium'>{db.name}</p>
+                  </div>
+                )
+              })}
           </div>
         </div>
         <div className='max-md:mb-10 mx-auto'>
@@ -71,14 +68,15 @@ const Skill = () => {
             Tools & Platforms
           </h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
-            <div className='text-center'>
-              <Git />
-              <p className='text-lg font-medium'>Git</p>
-            </div>
-            <div className='text-center'>
-              <Github />
-              <p className='text-lg font-medium'>Github</p>
-            </div>
+            {Tools &&
+              Tools.map((tool) => {
+                return (
+                  <div key={uuid()} className='text-center'>
+                    <Icon src={tool.image} alt={tool.name} />
+                    <p className='text-lg font-medium'>{tool.name}</p>
+                  </div>
+                )
+              })}
           </div>
         </div>
       </div>

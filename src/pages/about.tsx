@@ -35,10 +35,10 @@ const About = () => {
             </div>
           </div>
           <div className=' max-md:5-10 max-md:w-[300px] mt-10 flex md:order-2 order-1  mx-auto'>
-            <Image
-              src={DomzPhoto}
+            <img
+              src='https://i.ibb.co/3vpCrVK/photo1-removebg-preview.png'
               alt='Dominque photo'
-              className=' justify-center md:h-[450px]'
+              className=' justify-center md:h-[450px] border rounded-lg'
             />
           </div>
         </div>

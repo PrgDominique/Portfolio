@@ -22,8 +22,8 @@ const Skill = () => {
           Skills
         </h1>
       </div>
-      <div className='flex md:justify-between max-md:flex-col max-md:items-center mt-[5rem] gap-20'>
-        <div>
+      <div className=' max-md:flex-col max-md:items-center mt-[2rem] gap-20'>
+        <div className='mx-auto'>
           <h2 className='text-[2rem] font-medium text-center'>
             Programming Language
           </h2>
@@ -42,7 +42,7 @@ const Skill = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className='mt-10'>
           <h2 className='text-[2rem] font-medium text-center'>
             Frameworks & Technologies
           </h2>
@@ -74,7 +74,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
-      <div className='flex md:justify-between max-md:flex-col max-md:items-center mt-[5rem] gap-20'>
+      <div className='flex  max-md:flex-col max-md:items-center mt-[5rem] gap-20'>
         <div>
           <h2 className='text-[2rem] font-medium text-center'>Database</h2>
           <div className='flex justify-center gap-10 mt-5 flex-wrap'>
@@ -92,7 +92,7 @@ const Skill = () => {
             </div>
           </div>
         </div>
-        <div className='max-md:mb-10'>
+        <div className='max-md:mb-10 mx-auto'>
           <h2 className='text-[2rem] font-medium text-center'>
             Tools & Platforms
           </h2>

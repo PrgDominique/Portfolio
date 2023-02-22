@@ -1,7 +1,7 @@
 # My Portfolio
 
 # Landing page
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGQ0Y2M3NTk3MzU4OTVlNDZkZTZkMDI2Y2I5MzhjYzMwMDMwYjA3YiZjdD1n/ONDAFWvEKebsbBgcvm/giphy.gif)
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDc1ZDM5MDRlODE3NjU1YTQ5NDc1NGIwMmJmNTZkMWQ2YTI0OWVlNSZjdD1n/wH1laFoPu7GDpSlhy0/giphy.gif)
 
 
 > If you wanted to check where I got this idea visit this [link](https://github.com/mayankagarwal09/dev-portfolio)

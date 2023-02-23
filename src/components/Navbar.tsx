@@ -67,13 +67,6 @@ const Navbar = () => {
             </li>
             <li>
               <ListItem
-                href='/contact'
-                name='Contact'
-                active={currentPathname === '/contact'}
-              />
-            </li>
-            <li>
-              <ListItem
                 href='#'
                 name='Resume'
                 active={currentPathname === '/resume'}

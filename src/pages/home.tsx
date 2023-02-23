@@ -1,5 +1,5 @@
-import { Github } from '@/components/home/Github'
-import { LinkedIn } from '@/components/home/LinkedIn'
+import Icons from '../localdata/home/Social.json'
+import uuid from 'react-uuid'
 import Typewriter from 'typewriter-effect'
 import { motion } from 'framer-motion'
 
@@ -30,9 +30,25 @@ const Home = () => {
             }}
           />
         </div>
-        <div className='flex justify-center gap-20 mt-10 '>
-          <LinkedIn />
-          <Github />
+        <div className='flex justify-center gap-20 mt-10 flex-wrap '>
+        {Icons &&
+        Icons.map((icon) => {
+          return (
+            <div key={uuid()}>
+              <a
+                target='_blank'
+                href={icon.href}
+                rel='noopener noreferrer'
+              >
+                <img
+                  src={icon.image}
+                  alt={icon.name}
+                  className='w-14 h-14 border rounded-lg'
+                />
+              </a>
+            </div>
+          )
+        })}
         </div>
       </div>
     </motion.div>

@@ -44,7 +44,14 @@ const Project = () => {
             >
               {Projects.map((card) => (
                 <motion.div className='item' variants={item} key={uuid()}>
-                  <ImageProject src={card.image} alt={card.title} />
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    onHoverStart={(e) => {}}
+                    onHoverEnd={(e) => {}}
+                  >
+                    {' '}
+                    <ImageProject src={card.image} alt={card.title} />{' '}
+                  </motion.div>
                   <h1>{card.title}</h1>
                   <h2>{card.description}</h2>
                 </motion.div>

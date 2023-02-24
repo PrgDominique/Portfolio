@@ -28,7 +28,7 @@ const About = () => {
               <img
                 src='https://i.ibb.co/3vpCrVK/photo1-removebg-preview.png'
                 alt='Dominque photo'
-                className=' justify-center md:h-[450px] border rounded-lg'
+                className=' justify-center md:h-[450px] border rounded-full'
               />
             </div>
           </div>

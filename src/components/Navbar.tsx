@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { ToggleButton } from './ui/button/ToggleButton'
 import { ListItem } from './ui/navbar/ListItem'
 import Menu from './ui/navbar/Menu'
+import { Resume } from './ui/navbar/Resume'
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(true)
@@ -66,10 +67,9 @@ const Navbar = () => {
               />
             </li>
             <li>
-              <ListItem
-                href='#'
+              <Resume
+                href='https://drive.google.com/file/d/1S8qsXlBSnJsZSwaf3XwQ60s9fLItotHW/view'
                 name='Resume'
-                active={currentPathname === '/resume'}
               />
             </li>
             <li>

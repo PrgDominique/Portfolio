@@ -4,26 +4,47 @@
     "title": "Portfolio",
     "description": "My Portfolio Website",
     "github": "https://github.com/PrgDominique/Portfolio",
-    "live": "https://www.domzweb.com/"
+    "live": "https://www.domzweb.com/",
+    "stack": [
+      "Next JS",
+      "Tailwind CSS",
+      "Typescript"
+    ]
   },
   {
     "image": "https://i.ibb.co/Mk68wfy/sweldo-app.png",
     "title": "Sweldo App",
     "description": "Payroll Management System",
     "github": "https://github.com/jasonlerit/capstone-sweldo-app",
-    "live": "https://sweldo-app.vercel.app/"
+    "live": "https://sweldo-app.vercel.app/",
+    "stack": [
+      "React JS",
+      "Tailwind CSS",
+      "Laravel",
+      "Rest API"
+    ]
   },
   {
     "image": "https://i.ibb.co/xhVd1hN/fitness.png",
     "title": "Fitness Track",
     "description": "Fitness Tracking System",
-    "github": "https://github.com/PrgDominique/FitTrack"
+    "github": "https://github.com/PrgDominique/FitTrack",
+    "stack": [
+      "React JS",
+      "CSS",
+      "Mongo DB"
+    ]
   },
   {
     "image": "https://i.ibb.co/hYVpw72/Kodego-Attendance.png",
     "title": "KodeGo Attendance",
     "description": "KodeGo Attendance Monitoring System",
     "github": "https://github.com/PrgDominique/kodegoattendance",
-    "live": "https://kodegoattendance.vercel.app/"
+    "live": "https://kodegoattendance.vercel.app/",
+    "stack": [
+      "React JS",
+      "Material UI",
+      "Firebase"
+    ]
   }
 ]

@@ -4,6 +4,7 @@ import Projects from '../localdata/projects/Project.json'
 import uuid from 'react-uuid'
 import { Links } from '@/components/ui/button/Links'
 import { Livelink } from '@/components/ui/button/Livelink'
+import { Pill } from '@/components/ui/button/Pill'
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -62,15 +63,21 @@ const Project = () => {
                     <h1 className='text-2xl font-bold'>{card.title}</h1>
                     <h2 className='text-lg mt-10'>{card.description}</h2>
                   </div>
-                  <div className='mt-10 flex gap-10 justify-center'>
+                  <div className='mt-10 flex gap-10 justify-center divide-y-8'>
                     <Links src={card.github} name='Github' />
                     {card.live !== undefined ? (
                       <Livelink src={card.live} name='Live Link' />
                     ) : null}
                   </div>
-                  <div className='m-10 flex justify-center divide-y'>
-               
-                    test
+                  <div className='m-10 flex justify-center divide-y gap-5 flex-wrap'>
+                    {card.stack &&
+                      card.stack.map((stack) => {
+                        return (
+                          <>
+                            {stack !== undefined ? <Pill name={stack} /> : null}
+                          </>
+                        )
+                      })}
                   </div>
                 </motion.div>
               ))}

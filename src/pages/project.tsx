@@ -82,7 +82,7 @@ const Project = () => {
                         <Links src={card.github} name='Github' />
                       </div>
                       {card.live !== undefined ? (
-                        <Livelink src={card.live} name='Live Link' />
+                        <Livelink src={card.live} name='Demo' />
                       ) : null}
                     </div>
                   </div>

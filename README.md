@@ -1,4 +1,5 @@
-# My Portfolio
+# My Portfolio 
+> Next JS 13.0 version
 
 # Landing page
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDc1ZDM5MDRlODE3NjU1YTQ5NDc1NGIwMmJmNTZkMWQ2YTI0OWVlNSZjdD1n/wH1laFoPu7GDpSlhy0/giphy.gif)

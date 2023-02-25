@@ -46,7 +46,7 @@ const Project = () => {
             >
               {Projects.map((card) => (
                 <motion.div
-                  className='item shadow-lg border-2 dark:border-solid dark:border-white rounded-lg' 
+                  className='item shadow-lg border-2 dark:border-solid dark:border-white rounded-lg'
                   variants={item}
                   key={uuid()}
                 >
@@ -62,9 +62,15 @@ const Project = () => {
                     <h1 className='text-2xl font-bold'>{card.title}</h1>
                     <h2 className='text-lg mt-10'>{card.description}</h2>
                   </div>
-                  <div className="mt-10 flex gap-10 justify-center">
-                  <Links src={card.github} name='Github'/>
-                  { card.live !== undefined ? <Livelink src={card.live} name='Live Link' /> : null  }
+                  <div className='mt-10 flex gap-10 justify-center'>
+                    <Links src={card.github} name='Github' />
+                    {card.live !== undefined ? (
+                      <Livelink src={card.live} name='Live Link' />
+                    ) : null}
+                  </div>
+                  <div className='m-10 flex justify-center divide-y'>
+               
+                    test
                   </div>
                 </motion.div>
               ))}

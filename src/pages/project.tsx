@@ -2,6 +2,8 @@ import { ImageProject } from '@/components/Image/ImageProject'
 import { motion } from 'framer-motion'
 import Projects from '../localdata/projects/Project.json'
 import uuid from 'react-uuid'
+import { Links } from '@/components/ui/button/Links'
+import { Livelink } from '@/components/ui/button/Livelink'
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -59,7 +61,10 @@ const Project = () => {
                   <div className='p-5'>
                     <h1 className='text-2xl font-bold'>{card.title}</h1>
                     <h2 className='text-lg mt-10'>{card.description}</h2>
-                    
+                  </div>
+                  <div className="mt-10 flex gap-10 justify-center">
+                  <Links src={card.github} name='Github'/>
+                  { card.live !== undefined ? <Livelink src={card.live} name='Live Link' /> : null  }
                   </div>
                 </motion.div>
               ))}

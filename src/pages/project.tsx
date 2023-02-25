@@ -68,7 +68,7 @@ const Project = () => {
                       {card.stack &&
                         card.stack.map((stack) => {
                           return (
-                            <div>
+                            <div key={uuid()}>
                               {stack !== undefined ? (
                                 <Pill name={stack} />
                               ) : null}

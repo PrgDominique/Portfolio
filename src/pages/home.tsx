@@ -30,7 +30,7 @@ const Home = () => {
             }}
           />
         </div>
-        <div className='flex justify-center gap-20 mt-10 flex-wrap '>
+        <div className='flex justify-center gap-20 mt-24 flex-wrap '>
         {Icons &&
         Icons.map((icon) => {
           return (

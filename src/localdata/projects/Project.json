@@ -2,21 +2,28 @@
   {
     "image": "https://i.ibb.co/qsbCBf0/portfolio.png",
     "title": "Portfolio",
-    "description": "My Portfolio Website"
+    "description": "My Portfolio Website",
+    "github": "https://github.com/PrgDominique/Portfolio",
+    "live": "https://www.domzweb.com/"
   },
   {
     "image": "https://i.ibb.co/Mk68wfy/sweldo-app.png",
     "title": "Sweldo App",
-    "description": "Payroll Management System"
+    "description": "Payroll Management System",
+    "github": "https://github.com/jasonlerit/capstone-sweldo-app",
+    "live": "https://sweldo-app.vercel.app/"
   },
   {
     "image": "https://i.ibb.co/xhVd1hN/fitness.png",
     "title": "Fitness Track",
-    "description": "Fitness Tracking System"
+    "description": "Fitness Tracking System",
+    "github": "https://github.com/PrgDominique/FitTrack"
   },
   {
     "image": "https://i.ibb.co/hYVpw72/Kodego-Attendance.png",
     "title": "KodeGo Attendance",
-    "description": "KodeGo Attendance Monitoring System"
+    "description": "KodeGo Attendance Monitoring System",
+    "github": "https://github.com/PrgDominique/kodegoattendance",
+    "live": "https://kodegoattendance.vercel.app/"
   }
 ]

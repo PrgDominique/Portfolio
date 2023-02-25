@@ -59,6 +59,7 @@ const Project = () => {
                   <div className='p-5'>
                     <h1 className='text-2xl font-bold'>{card.title}</h1>
                     <h2 className='text-lg mt-10'>{card.description}</h2>
+                    
                   </div>
                 </motion.div>
               ))}

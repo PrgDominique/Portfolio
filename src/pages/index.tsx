@@ -22,7 +22,7 @@ const Home = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`I'm Developer`)
+                .typeString(`I'm a Developer`)
                 .pauseFor(2500)
                 .deleteAll()
                 .pauseFor(1500)
